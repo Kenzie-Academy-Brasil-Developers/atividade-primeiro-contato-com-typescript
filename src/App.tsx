@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Input } from './components/Input'
-import { CardContainer, MainContainer } from './style'
+import { CardContainer, MainContainer, Button } from './style'
 import Card from './components/Card'
 
 interface User {
@@ -29,7 +29,7 @@ function App() {
 					onChange={(e) => setAge(Number(e.target.value))}
 				/>
 				<Input placeholder='Hobby' onChange={(e) => setHobby(e.target.value)} />
-				<button onClick={handleClick}>Enviar</button>
+				<Button onClick={handleClick}>Enviar</Button>
 			</div>
 			<CardContainer>
 				{users.map((user, index) => {

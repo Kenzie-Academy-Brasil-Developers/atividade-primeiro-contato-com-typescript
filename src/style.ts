@@ -11,5 +11,10 @@ export const MainContainer = styled.main`
 
 export const Button = styled.button`
 	padding: 10px 20px;
-	border-radius: 5%5%;
+	border-radius: 5%;
+	margin-top: 5px;
+	border: none;
+	cursor: pointer;
+	background-color: #2a42c9;
+	color: white;
 `
